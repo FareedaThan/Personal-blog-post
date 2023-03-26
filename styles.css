@@ -1,0 +1,16 @@
+body {
+  background-color: #6D9886;
+}
+
+/* comment */
+h1, h3 {
+  color: #393E46;
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #F2E7D5;
+  border-width: 5px;
+  width: 10%;
+
+}
