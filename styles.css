@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background-color: #2D2727;
   font-family: 'JetBrains Mono';
 }
@@ -12,7 +13,6 @@ body {
 /* styling nav bar */
 /* Add a black background color to the top navigation */
 .topnav {
-  margin: 0;
   grid-area: nav;
   background-color: #191825;
   overflow: hidden;
@@ -46,18 +46,54 @@ body {
   color: #827397;
 }
 
+/* styling cards  */
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #827397;
+  margin-top: 40px;
+}
+
+/* styling buttons  */
+.buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn {
+  color: #827397;
+  width: 270px;
+  font-size: 35px;
+  font-family: 'JetBrains Mono';
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
 /* styling footer  */
 .main-footer{
+  font-size: 15px;
   grid-area: footer;
-  font-size: 10px;
   color: #FFFFFF;
   background-color: #191825;
+  text-align: center;
 }
 
 /* manage grid layout */
 .wrapper {
   display: grid;
-  grid-template-rows: 130px auto 500px 40px;
+  grid-template-rows: 130px auto 500px 50px;
   grid-template-areas:
     "header"
     "nav"
