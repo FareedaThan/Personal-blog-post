@@ -1,16 +1,66 @@
 body {
-  background-color: #6D9886;
+  background-color: #2D2727;
+  font-family: 'JetBrains Mono';
 }
 
-/* comment */
-h1, h3 {
-  color: #393E46;
+/* styling header  */
+.main-header{
+  grid-area: header;
+  color: #E9D5DA;
 }
 
-hr {
-  border-style: dotted none none;
-  border-color: #F2E7D5;
-  border-width: 5px;
-  width: 10%;
+/* styling nav bar */
+/* Add a black background color to the top navigation */
+.topnav {
+  margin: 0;
+  grid-area: nav;
+  background-color: #191825;
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #827397;
+  color: white;
+}
+
+/* styling content  */
+.content{
+  grid-area: content;
+  color: #827397;
+}
+
+/* styling footer  */
+.main-footer{
+  grid-area: footer;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #191825;
+}
+
+/* manage grid layout */
+.wrapper {
+  display: grid;
+  grid-template-rows: 130px auto 500px 40px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "footer";
 }
