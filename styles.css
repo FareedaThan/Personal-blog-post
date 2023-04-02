@@ -8,8 +8,22 @@ body {
 .main-header{
   grid-area: header;
   color: #E9D5DA;
+  margin-left: 30px;
 }
 
+h2, h3{
+  color: #827397;
+  font-weight: bolder;
+}
+
+h5, p{
+  color: #E9D5DA;
+  margin: 0;
+}
+
+li{
+  color: white;
+}
 /* styling nav bar */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -44,6 +58,7 @@ body {
 .content{
   grid-area: content;
   color: #827397;
+  margin-bottom: 100px;
 }
 
 /* styling cards  */
@@ -71,6 +86,7 @@ body {
 }
 
 .btn {
+  transition-duration: 0.4s;
   color: #827397;
   width: 270px;
   font-size: 35px;
@@ -78,6 +94,11 @@ body {
   font-weight: bold;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #827397; 
+  color: white;
 }
 
 
@@ -90,10 +111,37 @@ body {
   text-align: center;
 }
 
+.profile{
+  grid-area: "profile";
+  
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.id-photo{
+  border-radius: 10px;
+  border: 2px solid #827397;
+  justify-content: center;
+}
+
+.info{
+  grid-area: "info";
+  margin-right: 30px;
+}
+
+.personal-blog{
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-template-areas: "profile" "area";
+  margin-bottom: 50px;
+  margin-top: 15px;
+
+}
 /* manage grid layout */
 .wrapper {
   display: grid;
-  grid-template-rows: 130px auto 500px 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto 1fr 50px;
   grid-template-areas:
     "header"
     "nav"
