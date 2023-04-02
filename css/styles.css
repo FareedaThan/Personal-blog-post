@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: #2D2727;
+  font-family: 'JetBrains Mono';
+}
+
+p{
+  color: #E9D5DA;
+  margin: 0;
+}
+
+li{
+  color: white;
+}
+
+/* styling content  */
+.content{
+  grid-area: content;
+  color: #827397;
+  margin-bottom: 100px;
+}
+
+/* styling cards  */
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #827397;
+  margin-top: 40px;
+}
+
+/* styling buttons  */
+.btn {
+  transition-duration: 0.4s;
+  color: #827397;
+  width: 270px;
+  font-size: 35px;
+  font-family: 'JetBrains Mono';
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #827397; 
+  color: white;
+}
+
+#home-card{
+  color: #b8b7ba;
+  text-align: center;
+}
+
+/* styling footer  */
+.main-footer{
+  font-size: 15px;
+  grid-area: footer;
+  color: #eceaf2;
+  border-top: 5px solid #827397;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* manage grid layout */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto 1fr 50px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "footer";
+}

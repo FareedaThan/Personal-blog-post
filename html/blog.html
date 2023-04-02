@@ -6,7 +6,10 @@
     <meta charset="utf-8" name="viewport" 
         content= "width=device-width, initial-scale=1.0">
     <!-- link css file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/blog-content.css">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
   </head>
   <!-- HTML body part -->
@@ -18,7 +21,7 @@
       </div>
       <!-- add nav bar  -->
       <div class="topnav">
-        <a href="home.html">Home</a>
+        <a href="../home.html">Home</a>
         <a class="active" href="blog.html">Blog</a>
         <a href="https://www.linkedin.com/in/fareeda-thaithanan-959751159/">My linkedin</a>
         <a href="https://github.com/FareedaThan">My Github</a>
@@ -26,15 +29,16 @@
       <!-- add content  -->
       <div class="personal-blog">
         <div class="profile">
-          <img class="id-photo" src="photo/id.png" alt="pixel black cat">
+          <img class="id-photo" src="../photo/id.png" alt="pixel black cat">
+          <figcaption id="id-cat">Black cats are nice</figcaption>
           <h2>FAREEDA<br>THAITHANAN</h2>
-          <p>Aspiring Front end developer<br>with Data science background</p>
+          <p>Aspiring <i><q>Front end developer</q></i><br>with Data science background</p>
         </div>
         <div class="info">
-          <h3>ABOUT ME</h3>
+          <h3><u>ABOUT ME</u></h3>
           <p>I am a data analytics graduate with engineering background having keen interests in data science, machine learning, and Web development. 
             Looking for opportunities to utilize my skills to tackle challenging problems in tech industry.</p>
-          <h3>BACKGROUND</h3>
+          <h3><u>BACKGROUND</u></h3>
           <h5>PYTHON PROGRAMMER</h5>
           <h5>HIRATE TECHNICAL CORPORATION, JAPAN | 2022-PRESENT</h5>
           <ul>
@@ -46,6 +50,11 @@
             <li>QUT Science and Engineering (SEF) International Merit Scholarship recipient.</li>
             <li>Completed courses: Databases, Statistical Data Analysis, Object-Oriented Programming, Stochastic Modeling, Data mining, Introduction to research, Machine learning, Text, Web And Media Analytics.</li>
           </ul>
+          <div class="addition-btn">
+            <button class="add-btn">Ask me</button>
+            <button class="add-btn">Help</button>
+            <button class="add-btn">Report</button>
+          </div>
         </div>
       </div>
       <!-- add footer  -->

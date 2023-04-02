@@ -6,7 +6,9 @@
     <meta charset="utf-8" name="viewport" 
         content= "width=device-width, initial-scale=1.0">
     <!-- link css file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
   </head>
 
@@ -15,26 +17,33 @@
     <div class="wrapper">
        <!-- add header -->
       <div class="main-header">
-        <h1>FAREEDA<br>Personal Blog</h1>
+        <h1><b>FAREEDA<br>Personal Blog</b></h1>
       </div>
       <!-- add nav bar -->
       <div class="topnav">
         <a class="active" href="home.html">Home</a>
-        <a href="blog.html">Blog</a>
+        <a href="html/blog.html">Blog</a>
         <a href="https://www.linkedin.com/in/fareeda-thaithanan-959751159/">My linkedin</a>
         <a href="https://github.com/FareedaThan">My Github</a>
       </div>
       <!-- add content -->
       <div class="content">
         <div class="cards">
-          <img class="card" src="photo/blog.jpg" alt="pixel cute cat">
-          <img class="card" src="photo/project.jpg" alt="pixel python logo">
-          <img class="card" src="photo/art.jpg" alt="pixel van goh">
-        </div>
-        <div class="buttons">
-          <button class="btn" onclick="window.location.href='blog.html';">Blog</button>
-          <button class="btn">Projects</button>
-          <button class="btn">Art Gallery</button>
+          <figure>
+            <img class="card" src="photo/blog.jpg" alt="pixel cute cat">
+            <figcaption id="home-card">I am a cat person</figcaption>
+            <button class="btn" onclick="window.location.href='html/blog.html';">Blog</button>
+          </figure>
+          <figure>
+            <img class="card" src="photo/project.jpg" alt="pixel python logo">
+            <figcaption id="home-card">I did python projects</figcaption>
+            <button class="btn">Projects</button>
+          </figure>
+          <figure>
+            <img class="card" src="photo/art.jpg" alt="pixel van goh">
+            <figcaption id="home-card">And I love arts!</figcaption>
+            <button class="btn">Art Gallery</button>
+        </figure>
         </div>
       </div>
       <!-- add footer  -->

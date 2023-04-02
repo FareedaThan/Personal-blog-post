@@ -1,0 +1,16 @@
+/* styling header  */
+.main-header{
+    grid-area: header;
+    color: #E9D5DA;
+    margin-left: 30px;
+  }
+  
+  h2, h3{
+    color: #827397;
+    font-weight: bolder;
+  }
+
+  h5{
+    color: #E9D5DA;
+    margin: 0;
+  }

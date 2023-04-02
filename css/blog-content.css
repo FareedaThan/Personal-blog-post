@@ -1,0 +1,46 @@
+.profile{
+    grid-area: "profile";
+    margin-top: 30px;
+    margin-left: 30px;
+}
+  
+.id-photo{
+  border-radius: 10px;
+  border: 2px solid #827397;
+  justify-content: center;
+}
+
+#id-cat{
+  color: #b8b7ba;
+}
+
+.info{
+  grid-area: "info";
+  margin-right: 30px;
+}
+
+.addition-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.add-btn{
+  font-family: 'JetBrains Mono';
+  color: #827397;
+  border-radius: 5px;
+}
+
+.add-btn:hover {
+  background-color: #827397; 
+  color: white;
+}
+
+.personal-blog{
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-template-areas: "profile" "area";
+  margin-bottom: 50px;
+  margin-top: 15px;
+
+}
