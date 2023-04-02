@@ -106,9 +106,10 @@ li{
 .main-footer{
   font-size: 15px;
   grid-area: footer;
-  color: #FFFFFF;
-  background-color: #191825;
+  color: #eceaf2;
+  border-top: 5px solid #827397;
   text-align: center;
+  padding-top: 10px;
 }
 
 .profile{
